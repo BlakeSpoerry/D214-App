@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */; };
-		40A4E7541BEBEB59002DCF60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7531BEBEB59002DCF60 /* ViewController.swift */; };
+		40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */; };
 		40A4E7571BEBEB59002DCF60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A4E7551BEBEB59002DCF60 /* Main.storyboard */; };
 		40A4E75A1BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7581BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld */; };
 		40A4E75C1BEBEB59002DCF60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A4E75B1BEBEB59002DCF60 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		40A4E74E1BEBEB59002DCF60 /* D214AppAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = D214AppAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40A4E7531BEBEB59002DCF60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
 		40A4E7561BEBEB59002DCF60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40A4E7591BEBEB59002DCF60 /* D214AppAlpha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = D214AppAlpha.xcdatamodel; sourceTree = "<group>"; };
 		40A4E75B1BEBEB59002DCF60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,8 +99,9 @@
 		40A4E7501BEBEB59002DCF60 /* D214AppAlpha */ = {
 			isa = PBXGroup;
 			children = (
+				40A4E7821BEBEBAD002DCF60 /* SplitViewController */,
 				40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */,
-				40A4E7531BEBEB59002DCF60 /* ViewController.swift */,
+				40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */,
 				40A4E7551BEBEB59002DCF60 /* Main.storyboard */,
 				40A4E75B1BEBEB59002DCF60 /* Assets.xcassets */,
 				40A4E75D1BEBEB59002DCF60 /* LaunchScreen.storyboard */,
@@ -126,6 +127,13 @@
 				40A4E7761BEBEB5A002DCF60 /* Info.plist */,
 			);
 			path = D214AppAlphaUITests;
+			sourceTree = "<group>";
+		};
+		40A4E7821BEBEBAD002DCF60 /* SplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SplitViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A4E7541BEBEB59002DCF60 /* ViewController.swift in Sources */,
+				40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */,
 				40A4E75A1BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld in Sources */,
 				40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */,
 			);
@@ -403,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = D214AppAlpha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JHHS.D214AppAlpha;
@@ -414,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = D214AppAlpha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JHHS.D214AppAlpha;
