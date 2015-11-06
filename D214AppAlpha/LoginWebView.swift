@@ -10,8 +10,11 @@ import UIKit
 
 class LoginWebView: UIViewController {
 
+    @IBOutlet weak var LoginWebView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        LoginWebView.loadRequest(NSURLRequest(URL: NSURL(string: "http://ezproxy.d214.org:2048/login")!))
         // Do any additional setup after loading the view, typically from a nib.
     }
 

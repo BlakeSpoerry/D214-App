@@ -15,6 +15,7 @@
 		40A4E75F1BEBEB59002DCF60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A4E75D1BEBEB59002DCF60 /* LaunchScreen.storyboard */; };
 		40A4E76A1BEBEB5A002DCF60 /* D214AppAlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7691BEBEB5A002DCF60 /* D214AppAlphaTests.swift */; };
 		40A4E7751BEBEB5A002DCF60 /* D214AppAlphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7741BEBEB5A002DCF60 /* D214AppAlphaUITests.swift */; };
+		40E475B01BED3A9300C37007 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E475AF1BED3A9300C37007 /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		40A4E7701BEBEB5A002DCF60 /* D214AppAlphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = D214AppAlphaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A4E7741BEBEB5A002DCF60 /* D214AppAlphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D214AppAlphaUITests.swift; sourceTree = "<group>"; };
 		40A4E7761BEBEB5A002DCF60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E475AF1BED3A9300C37007 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,11 @@
 		40A4E7501BEBEB59002DCF60 /* D214AppAlpha */ = {
 			isa = PBXGroup;
 			children = (
+				40E475AE1BED33F200C37007 /* Webview */,
+				40E475AD1BED33E800C37007 /* TableView */,
+				40E475AC1BED33D200C37007 /* Login */,
 				40A4E7821BEBEBAD002DCF60 /* SplitViewController */,
 				40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */,
-				40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */,
 				40A4E7551BEBEB59002DCF60 /* Main.storyboard */,
 				40A4E75B1BEBEB59002DCF60 /* Assets.xcassets */,
 				40A4E75D1BEBEB59002DCF60 /* LaunchScreen.storyboard */,
@@ -134,6 +138,29 @@
 			children = (
 			);
 			name = SplitViewController;
+			sourceTree = "<group>";
+		};
+		40E475AC1BED33D200C37007 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		40E475AD1BED33E800C37007 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				40E475AF1BED3A9300C37007 /* MainTableViewController.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		40E475AE1BED33F200C37007 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Webview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E475B01BED3A9300C37007 /* MainTableViewController.swift in Sources */,
 				40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */,
 				40A4E75A1BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld in Sources */,
 				40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */,
@@ -498,6 +526,7 @@
 				40A4E77B1BEBEB5A002DCF60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40A4E77C1BEBEB5A002DCF60 /* Build configuration list for PBXNativeTarget "D214AppAlphaTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +535,7 @@
 				40A4E77E1BEBEB5A002DCF60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40A4E77F1BEBEB5A002DCF60 /* Build configuration list for PBXNativeTarget "D214AppAlphaUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +544,7 @@
 				40A4E7811BEBEB5A002DCF60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
