@@ -12,6 +12,7 @@ class LoginWebView: UIViewController {
 
     @IBOutlet weak var LoginWebView: UIWebView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         LoginWebView.loadRequest(NSURLRequest(URL: NSURL(string: "http://ezproxy.d214.org:2048/login")!))
@@ -21,6 +22,11 @@ class LoginWebView: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let nextPath: MainTableViewController = segue.destinationViewController as! MainTableViewController
+      
+        nextPath.savedWebView = LoginWebView
     }
 
 

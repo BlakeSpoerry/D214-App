@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400196351BFA69E4000270B0 /* SuString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400196341BFA69E4000270B0 /* SuString.swift */; };
+		4013C2141C10D2AB00E630F7 /* SelectCiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013C2131C10D2AB00E630F7 /* SelectCiteViewController.swift */; };
+		4032641F1C0B931D009D23BD /* SingleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032641E1C0B931D009D23BD /* SingleWebView.swift */; };
 		40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */; };
 		40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */; };
 		40A4E7571BEBEB59002DCF60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A4E7551BEBEB59002DCF60 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		400196341BFA69E4000270B0 /* SuString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuString.swift; sourceTree = "<group>"; };
+		4013C2131C10D2AB00E630F7 /* SelectCiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCiteViewController.swift; sourceTree = "<group>"; };
+		4032641E1C0B931D009D23BD /* SingleWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleWebView.swift; sourceTree = "<group>"; };
 		40A4E74E1BEBEB59002DCF60 /* D214AppAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = D214AppAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 				40E475AC1BED33D200C37007 /* Login */,
 				40A4E7821BEBEBAD002DCF60 /* SplitViewController */,
 				40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */,
+				400196341BFA69E4000270B0 /* SuString.swift */,
 				40A4E7551BEBEB59002DCF60 /* Main.storyboard */,
 				40A4E75B1BEBEB59002DCF60 /* Assets.xcassets */,
 				40A4E75D1BEBEB59002DCF60 /* LaunchScreen.storyboard */,
@@ -136,6 +143,7 @@
 		40A4E7821BEBEBAD002DCF60 /* SplitViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4013C2131C10D2AB00E630F7 /* SelectCiteViewController.swift */,
 			);
 			name = SplitViewController;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 		40E475AE1BED33F200C37007 /* Webview */ = {
 			isa = PBXGroup;
 			children = (
+				4032641E1C0B931D009D23BD /* SingleWebView.swift */,
 			);
 			name = Webview;
 			sourceTree = "<group>";
@@ -295,9 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E475B01BED3A9300C37007 /* MainTableViewController.swift in Sources */,
+				4032641F1C0B931D009D23BD /* SingleWebView.swift in Sources */,
+				400196351BFA69E4000270B0 /* SuString.swift in Sources */,
 				40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */,
 				40A4E75A1BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld in Sources */,
 				40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */,
+				4013C2141C10D2AB00E630F7 /* SelectCiteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
