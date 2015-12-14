@@ -85,7 +85,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="xnJ-GI-nZT" kind="show" id="hw8-5O-OR4"/>
+                                            <segue destination="xnJ-GI-nZT" kind="show" identifier="SplitWebViewSegue" id="hw8-5O-OR4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -172,16 +172,16 @@
             </objects>
             <point key="canvasLocation" x="-92" y="-347"/>
         </scene>
-        <!--Split Table View Controller-->
+        <!--Select Site Table View Controller-->
         <scene sceneID="BOY-jc-KC2">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="tXO-YG-E0G" customClass="SplitTableViewController" customModule="D214AppAlpha" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController extendedLayoutIncludesOpaqueBars="YES" clearsSelectionOnViewWillAppear="NO" id="tXO-YG-E0G" customClass="SelectSiteTableViewController" customModule="D214AppAlpha" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rEG-kJ-k2U">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="ListCell" textLabel="AYa-1f-8lS" style="IBUITableViewCellStyleDefault" id="9rZ-aj-CHq">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="WebsiteCell" textLabel="AYa-1f-8lS" style="IBUITableViewCellStyleDefault" id="9rZ-aj-CHq">
                                 <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rZ-aj-CHq" id="hXJ-f7-JDu">
@@ -210,15 +210,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="iU8-TR-X0s"/>
+                    <connections>
+                        <outlet property="WebsiteTableView" destination="rEG-kJ-k2U" id="DeH-yE-uAm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttu-Me-O5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4018" y="98"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Site View Controller-->
         <scene sceneID="IQb-k8-SJA">
             <objects>
-                <viewController id="oz0-XR-xTr" customClass="DetailViewController" customModule="D214AppAlpha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oz0-XR-xTr" customClass="SiteViewController" customModule="D214AppAlpha" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VkC-Sg-cbE"/>
                         <viewControllerLayoutGuide type="bottom" id="1g8-Qw-mSk"/>
@@ -236,6 +239,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FFw-ND-0cK"/>
                     <connections>
+                        <outlet property="WebSiteView" destination="tsS-MQ-rka" id="FZT-D8-ELl"/>
                         <outlet property="splitWebView" destination="tsS-MQ-rka" id="6ph-M4-PtS"/>
                     </connections>
                 </viewController>
@@ -290,7 +294,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kww-xX-NqD"/>
-        <segue reference="q0M-qo-cCr"/>
+        <segue reference="DLg-t5-eVc"/>
+        <segue reference="3JT-0C-5SP"/>
     </inferredMetricsTieBreakers>
 </document>

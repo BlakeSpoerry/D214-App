@@ -19,12 +19,14 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
     var savedWebView: UIWebView?
     var selectedData: SuString?
     
+    // Empty SuStrings used to store data
     var databases = [SuString]()
     var resorces = [SuString]()
     var writing = [SuString]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //sets the segmented controller to me unselcted
          MainSegmentedControl.selectedSegmentIndex = -1
         databases = getList("databases")
         resorces = getList("")
@@ -42,16 +44,10 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
         switch(MainSegmentedControl.selectedSegmentIndex){
         case 0:
             return databases.count
-            break
-            
         case 1:
             return resorces.count
-            break
-            
         case 2:
             return writing.count
-            break
-            
         default:
             break
         }
@@ -62,22 +58,17 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
         var cell = UITableViewCell()
         switch(MainSegmentedControl.selectedSegmentIndex){
         case 0:
-            cell = DataBaseTable.dequeueReusableCellWithIdentifier("CellDataBase", forIndexPath: indexPath) as! UITableViewCell
+            cell = DataBaseTable.dequeueReusableCellWithIdentifier("CellDataBase", forIndexPath: indexPath)
             cell.textLabel?.text = databases[indexPath.row].getName()
             setAlphas([1.0,0.0,0.0])
-            break;
-            
         case 1:
-            cell = ResourceTable.dequeueReusableCellWithIdentifier("CellResource", forIndexPath: indexPath) as! UITableViewCell
+            cell = ResourceTable.dequeueReusableCellWithIdentifier("CellResource", forIndexPath: indexPath)
             cell.textLabel?.text = resorces[indexPath.row].getName()
             setAlphas([0.0,1.0,0.0])
-            break
-            
         case 2:
-            cell = WritingTable.dequeueReusableCellWithIdentifier("CellWriting", forIndexPath: indexPath) as! UITableViewCell
+            cell = WritingTable.dequeueReusableCellWithIdentifier("CellWriting", forIndexPath: indexPath)
             cell.textLabel?.text = writing[indexPath.row].getName()
             setAlphas([0.0,0.0,1.0])
-            break
         default:
             break
         }
@@ -90,16 +81,14 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let selectedCell = tableView.cellForRowAtIndexPath(indexPath)
         switch(MainSegmentedControl.selectedSegmentIndex){
         case 0:
-            
-            break
+            selectedData = databases[indexPath.row]
+            performSegueWithIdentifier("SplitWebViewSegue", sender: selectedCell)
         case 1:
             selectedData = resorces[indexPath.row]
             performSegueWithIdentifier("SingleWebViewSegue", sender: selectedCell)
-            break
         case 2:
             selectedData = writing[indexPath.row]
             performSegueWithIdentifier("SingleWebViewSegue", sender: selectedCell)
-            break
         default:
             break
         }
@@ -154,6 +143,15 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
             nextPath.cellSelected = selectedData
             
         }
+        if segue.identifier == "SplitWebViewSegue"
+        {
+            let nextPath: SelectSiteTableViewController = segue.destinationViewController as! SelectSiteTableViewController
+            nextPath.savedSplitWebView = savedWebView
+            nextPath.sectionidentifier = selectedData?.getName()
+            
+        }
+    
+        
     }
     
 

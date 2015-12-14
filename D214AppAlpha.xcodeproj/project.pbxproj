@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		400196351BFA69E4000270B0 /* SuString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400196341BFA69E4000270B0 /* SuString.swift */; };
-		4013C2141C10D2AB00E630F7 /* SelectCiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013C2131C10D2AB00E630F7 /* SelectCiteViewController.swift */; };
+		4013C2141C10D2AB00E630F7 /* SelectSiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */; };
 		4032641F1C0B931D009D23BD /* SingleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032641E1C0B931D009D23BD /* SingleWebView.swift */; };
 		40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */; };
 		40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */; };
@@ -19,6 +19,7 @@
 		40A4E76A1BEBEB5A002DCF60 /* D214AppAlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7691BEBEB5A002DCF60 /* D214AppAlphaTests.swift */; };
 		40A4E7751BEBEB5A002DCF60 /* D214AppAlphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7741BEBEB5A002DCF60 /* D214AppAlphaUITests.swift */; };
 		40E475B01BED3A9300C37007 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E475AF1BED3A9300C37007 /* MainTableViewController.swift */; };
+		40F4FB181C10D51500258A4A /* SiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4FB171C10D51500258A4A /* SiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		400196341BFA69E4000270B0 /* SuString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuString.swift; sourceTree = "<group>"; };
-		4013C2131C10D2AB00E630F7 /* SelectCiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCiteViewController.swift; sourceTree = "<group>"; };
+		4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSiteTableViewController.swift; sourceTree = "<group>"; };
 		4032641E1C0B931D009D23BD /* SingleWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleWebView.swift; sourceTree = "<group>"; };
 		40A4E74E1BEBEB59002DCF60 /* D214AppAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = D214AppAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		40A4E7741BEBEB5A002DCF60 /* D214AppAlphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D214AppAlphaUITests.swift; sourceTree = "<group>"; };
 		40A4E7761BEBEB5A002DCF60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E475AF1BED3A9300C37007 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		40F4FB171C10D51500258A4A /* SiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +145,8 @@
 		40A4E7821BEBEBAD002DCF60 /* SplitViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4013C2131C10D2AB00E630F7 /* SelectCiteViewController.swift */,
+				4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */,
+				40F4FB171C10D51500258A4A /* SiteViewController.swift */,
 			);
 			name = SplitViewController;
 			sourceTree = "<group>";
@@ -309,7 +312,8 @@
 				40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */,
 				40A4E75A1BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld in Sources */,
 				40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */,
-				4013C2141C10D2AB00E630F7 /* SelectCiteViewController.swift in Sources */,
+				4013C2141C10D2AB00E630F7 /* SelectSiteTableViewController.swift in Sources */,
+				40F4FB181C10D51500258A4A /* SiteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,7 @@ class SingleWebView: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+         SingleWebViewer.loadRequest(NSURLRequest(URL: (cellSelected?.getURL())!))
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
