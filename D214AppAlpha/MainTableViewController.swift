@@ -26,11 +26,12 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setAlphas([0.0,0.0,0.0])
         //sets the segmented controller to me unselcted
          MainSegmentedControl.selectedSegmentIndex = -1
-        databases = getList("databases")
-        resorces = getList("")
-        writing = getList("")
+        //databases = getList("")
+        //resorces = getList("")
+        writing = getList("writing")
     }
     
     @IBAction func segmentedControlChanged(sender: UISegmentedControl) {
@@ -58,7 +59,7 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
         var cell = UITableViewCell()
         switch(MainSegmentedControl.selectedSegmentIndex){
         case 0:
-            cell = DataBaseTable.dequeueReusableCellWithIdentifier("CellDataBase", forIndexPath: indexPath)
+            cell = DataBaseTable.dequeueReusableCellWithIdentifier("CellDatabase", forIndexPath: indexPath)
             cell.textLabel?.text = databases[indexPath.row].getName()
             setAlphas([1.0,0.0,0.0])
         case 1:

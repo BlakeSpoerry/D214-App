@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		400196351BFA69E4000270B0 /* SuString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400196341BFA69E4000270B0 /* SuString.swift */; };
 		4013C2141C10D2AB00E630F7 /* SelectSiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */; };
+		401DC0631C2340C900CB1583 /* writing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401DC0621C2340C900CB1583 /* writing.txt */; };
 		4032641F1C0B931D009D23BD /* SingleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032641E1C0B931D009D23BD /* SingleWebView.swift */; };
 		40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */; };
-		40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */; };
+		40A4E7541BEBEB59002DCF60 /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7531BEBEB59002DCF60 /* LoginWebViewController.swift */; };
 		40A4E7571BEBEB59002DCF60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A4E7551BEBEB59002DCF60 /* Main.storyboard */; };
 		40A4E75A1BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7581BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld */; };
 		40A4E75C1BEBEB59002DCF60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A4E75B1BEBEB59002DCF60 /* Assets.xcassets */; };
@@ -42,10 +43,11 @@
 /* Begin PBXFileReference section */
 		400196341BFA69E4000270B0 /* SuString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuString.swift; sourceTree = "<group>"; };
 		4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSiteTableViewController.swift; sourceTree = "<group>"; };
+		401DC0621C2340C900CB1583 /* writing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = writing.txt; sourceTree = "<group>"; };
 		4032641E1C0B931D009D23BD /* SingleWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleWebView.swift; sourceTree = "<group>"; };
 		40A4E74E1BEBEB59002DCF60 /* D214AppAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = D214AppAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
+		40A4E7531BEBEB59002DCF60 /* LoginWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
 		40A4E7561BEBEB59002DCF60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40A4E7591BEBEB59002DCF60 /* D214AppAlpha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = D214AppAlpha.xcdatamodel; sourceTree = "<group>"; };
 		40A4E75B1BEBEB59002DCF60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		401DC0611C23408900CB1583 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				401DC0621C2340C900CB1583 /* writing.txt */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		40A4E7451BEBEB59002DCF60 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		40A4E7501BEBEB59002DCF60 /* D214AppAlpha */ = {
 			isa = PBXGroup;
 			children = (
+				401DC0611C23408900CB1583 /* Data */,
 				40E475AE1BED33F200C37007 /* Webview */,
 				40E475AD1BED33E800C37007 /* TableView */,
 				40E475AC1BED33D200C37007 /* Login */,
@@ -154,7 +165,7 @@
 		40E475AC1BED33D200C37007 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				40A4E7531BEBEB59002DCF60 /* LoginWebView.swift */,
+				40A4E7531BEBEB59002DCF60 /* LoginWebViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -280,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40A4E75F1BEBEB59002DCF60 /* LaunchScreen.storyboard in Resources */,
+				401DC0631C2340C900CB1583 /* writing.txt in Resources */,
 				40A4E75C1BEBEB59002DCF60 /* Assets.xcassets in Resources */,
 				40A4E7571BEBEB59002DCF60 /* Main.storyboard in Resources */,
 			);
@@ -309,7 +321,7 @@
 				40E475B01BED3A9300C37007 /* MainTableViewController.swift in Sources */,
 				4032641F1C0B931D009D23BD /* SingleWebView.swift in Sources */,
 				400196351BFA69E4000270B0 /* SuString.swift in Sources */,
-				40A4E7541BEBEB59002DCF60 /* LoginWebView.swift in Sources */,
+				40A4E7541BEBEB59002DCF60 /* LoginWebViewController.swift in Sources */,
 				40A4E75A1BEBEB59002DCF60 /* D214AppAlpha.xcdatamodeld in Sources */,
 				40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */,
 				4013C2141C10D2AB00E630F7 /* SelectSiteTableViewController.swift in Sources */,
