@@ -32,13 +32,24 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
         //databases = getList("")
         //resorces = getList("")
         writing = getList("writing")
+        databases = getList("databaselist")
     }
     
     @IBAction func segmentedControlChanged(sender: UISegmentedControl) {
-        DataBaseTable.reloadData()
-        ResourceTable.reloadData()
-        WritingTable.reloadData()
-        
+        switch(MainSegmentedControl.selectedSegmentIndex){
+        case 0:
+            DataBaseTable.reloadData()
+            setAlphas([1.0,0.0,0.0])
+        case 1:
+            ResourceTable.reloadData()
+            setAlphas([0.0,1.0,0.0])
+        case 2:
+            WritingTable.reloadData()
+            setAlphas([0.0,0.0,1.0])
+        default:
+            break
+        }
+
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         let returnValue = 0
@@ -146,10 +157,12 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         if segue.identifier == "SplitWebViewSegue"
         {
-            let nextPath: SelectSiteTableViewController = segue.destinationViewController as! SelectSiteTableViewController
+            
+            let firstPath = segue.destinationViewController as! UISplitViewController
+            let secondPath = firstPath.viewControllers.first as! UINavigationController
+            let nextPath = secondPath.viewControllers.first as! SelectSiteTableViewController
             nextPath.savedSplitWebView = savedWebView
             nextPath.sectionidentifier = selectedData?.getName()
-            
         }
     
         

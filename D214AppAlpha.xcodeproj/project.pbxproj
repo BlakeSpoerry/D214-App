@@ -11,6 +11,8 @@
 		4013C2141C10D2AB00E630F7 /* SelectSiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */; };
 		401DC0631C2340C900CB1583 /* writing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401DC0621C2340C900CB1583 /* writing.txt */; };
 		4032641F1C0B931D009D23BD /* SingleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032641E1C0B931D009D23BD /* SingleWebView.swift */; };
+		4043B3C31C3B1B3D00DE6AF7 /* databaselist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4043B3C21C3B1B3D00DE6AF7 /* databaselist.txt */; };
+		4043B3C51C3B1DE600DE6AF7 /* Auto.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4043B3C41C3B1DE600DE6AF7 /* Auto.txt */; };
 		40A4E7521BEBEB59002DCF60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */; };
 		40A4E7541BEBEB59002DCF60 /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4E7531BEBEB59002DCF60 /* LoginWebViewController.swift */; };
 		40A4E7571BEBEB59002DCF60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A4E7551BEBEB59002DCF60 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSiteTableViewController.swift; sourceTree = "<group>"; };
 		401DC0621C2340C900CB1583 /* writing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = writing.txt; sourceTree = "<group>"; };
 		4032641E1C0B931D009D23BD /* SingleWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleWebView.swift; sourceTree = "<group>"; };
+		4043B3C21C3B1B3D00DE6AF7 /* databaselist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = databaselist.txt; sourceTree = "<group>"; };
+		4043B3C41C3B1DE600DE6AF7 /* Auto.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Auto.txt; sourceTree = "<group>"; };
 		40A4E74E1BEBEB59002DCF60 /* D214AppAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = D214AppAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A4E7511BEBEB59002DCF60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A4E7531BEBEB59002DCF60 /* LoginWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		401DC0611C23408900CB1583 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4043B3C41C3B1DE600DE6AF7 /* Auto.txt */,
+				4043B3C21C3B1B3D00DE6AF7 /* databaselist.txt */,
 				401DC0621C2340C900CB1583 /* writing.txt */,
 			);
 			name = Data;
@@ -254,6 +260,7 @@
 				TargetAttributes = {
 					40A4E74D1BEBEB59002DCF60 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 4BD2832G2G;
 					};
 					40A4E7641BEBEB5A002DCF60 = {
 						CreatedOnToolsVersion = 7.1;
@@ -294,6 +301,8 @@
 				401DC0631C2340C900CB1583 /* writing.txt in Resources */,
 				40A4E75C1BEBEB59002DCF60 /* Assets.xcassets in Resources */,
 				40A4E7571BEBEB59002DCF60 /* Main.storyboard in Resources */,
+				4043B3C31C3B1B3D00DE6AF7 /* databaselist.txt in Resources */,
+				4043B3C51C3B1DE600DE6AF7 /* Auto.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +406,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -442,6 +452,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -468,10 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = D214AppAlpha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JHHS.D214AppAlpha;
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.D214App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -480,10 +494,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = D214AppAlpha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JHHS.D214AppAlpha;
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.D214App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

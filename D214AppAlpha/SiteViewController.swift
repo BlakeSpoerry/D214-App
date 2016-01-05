@@ -12,11 +12,11 @@ class SiteViewController: UIViewController{
 
     @IBOutlet weak var WebSiteView: UIWebView!
     
-    var loadThisSite: SuString?
+    var loadThisSite = SuString(title: "Jhhs", url: NSURL(string: "http://jhhs.d214.org/")!, info: "School")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        WebSiteView.loadRequest(NSURLRequest(URL: (loadThisSite?.getURL())!))
+        WebSiteView.loadRequest(NSURLRequest(URL: (loadThisSite.getURL())))
     
 }
     override func didReceiveMemoryWarning() {
