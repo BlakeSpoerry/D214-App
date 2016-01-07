@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		400196351BFA69E4000270B0 /* SuString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400196341BFA69E4000270B0 /* SuString.swift */; };
+		4008184F1C3EF38300316833 /* Biography.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4008184D1C3EF38300316833 /* Biography.txt */; };
+		400818501C3EF38300316833 /* College and Career.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4008184E1C3EF38300316833 /* College and Career.txt */; };
+		400818521C3EF39300316833 /* resoucres.txt in Resources */ = {isa = PBXBuildFile; fileRef = 400818511C3EF39300316833 /* resoucres.txt */; };
 		4013C2141C10D2AB00E630F7 /* SelectSiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */; };
 		401DC0631C2340C900CB1583 /* writing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401DC0621C2340C900CB1583 /* writing.txt */; };
 		4032641F1C0B931D009D23BD /* SingleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032641E1C0B931D009D23BD /* SingleWebView.swift */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		400196341BFA69E4000270B0 /* SuString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuString.swift; sourceTree = "<group>"; };
+		4008184D1C3EF38300316833 /* Biography.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Biography.txt; sourceTree = "<group>"; };
+		4008184E1C3EF38300316833 /* College and Career.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "College and Career.txt"; sourceTree = "<group>"; };
+		400818511C3EF39300316833 /* resoucres.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = resoucres.txt; sourceTree = "<group>"; };
 		4013C2131C10D2AB00E630F7 /* SelectSiteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSiteTableViewController.swift; sourceTree = "<group>"; };
 		401DC0621C2340C900CB1583 /* writing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = writing.txt; sourceTree = "<group>"; };
 		4032641E1C0B931D009D23BD /* SingleWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleWebView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,9 @@
 		401DC0611C23408900CB1583 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				400818511C3EF39300316833 /* resoucres.txt */,
+				4008184D1C3EF38300316833 /* Biography.txt */,
+				4008184E1C3EF38300316833 /* College and Career.txt */,
 				4043B3C41C3B1DE600DE6AF7 /* Auto.txt */,
 				4043B3C21C3B1B3D00DE6AF7 /* databaselist.txt */,
 				401DC0621C2340C900CB1583 /* writing.txt */,
@@ -300,9 +309,12 @@
 				40A4E75F1BEBEB59002DCF60 /* LaunchScreen.storyboard in Resources */,
 				401DC0631C2340C900CB1583 /* writing.txt in Resources */,
 				40A4E75C1BEBEB59002DCF60 /* Assets.xcassets in Resources */,
+				400818521C3EF39300316833 /* resoucres.txt in Resources */,
 				40A4E7571BEBEB59002DCF60 /* Main.storyboard in Resources */,
+				400818501C3EF38300316833 /* College and Career.txt in Resources */,
 				4043B3C31C3B1B3D00DE6AF7 /* databaselist.txt in Resources */,
 				4043B3C51C3B1DE600DE6AF7 /* Auto.txt in Resources */,
+				4008184F1C3EF38300316833 /* Biography.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

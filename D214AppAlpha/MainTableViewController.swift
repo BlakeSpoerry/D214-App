@@ -33,6 +33,7 @@ class MainTableViewController: UIViewController, UITableViewDelegate, UITableVie
         //resorces = getList("")
         writing = getList("writing")
         databases = getList("databaselist")
+        resorces = getList("resources")
     }
     
     @IBAction func segmentedControlChanged(sender: UISegmentedControl) {

@@ -19,10 +19,6 @@ class SelectSiteTableViewController: UITableViewController {
     var savedSplitWebView: UIWebView?
 
     
-   // private let Sections = [
-   //     SuString(title: , url: <#T##NSURL#>, info: <#T##String#>),
-    //    ]
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         WebSiteList = getWebList(sectionidentifier!)
@@ -42,9 +38,10 @@ class SelectSiteTableViewController: UITableViewController {
     // MARK: Table View Delegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("show_detail_segue_id", sender: indexPath)
+       // performSegueWithIdentifier("show_detail_segue_id", sender: indexPath)
         
     }
+    
     func getWebList(filename: String) -> [SuString]{
         var list = [SuString]()
         if let path = NSBundle.mainBundle().pathForResource(filename, ofType: "txt"){
@@ -84,6 +81,8 @@ class SelectSiteTableViewController: UITableViewController {
             if let selectedRowIndexPath = tableView.indexPathForSelectedRow {
                 siteViewController.WebSiteView = savedSplitWebView
                 siteViewController.loadThisSite = WebSiteList![selectedRowIndexPath.row]
+                //siteViewController.WebSiteView.alpha = 1.0
+                
             
                 
             }
